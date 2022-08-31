@@ -61,7 +61,16 @@ console.log(isMoreTwoWardsCountry);
 
 const reverseCountry = countries.reverse();
 
-// All the countries from array already capitalize.
-// So the approach to do this problem is i will take the first char of the coutry and make is toUpperCase()
+function capitalize(country){
+    return country.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
+}
 
-console.log(capitalized);
+const capitalizedContry = [];
+
+reverseCountry.map((country) => {
+    let cou = capitalize(country);
+    capitalizedContry.push(cou);
+})
+
+
+console.log(capitalizedContry);
