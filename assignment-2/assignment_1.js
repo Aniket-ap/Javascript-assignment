@@ -5,5 +5,5 @@
 let personalAccount = {
     firstName : "Aniket",
     lastName : "Pradhan",
-    incomes : 700000,
+    incomes : 70000,
 }
